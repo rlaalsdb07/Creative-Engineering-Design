@@ -1,4 +1,4 @@
-"""틱택토 게임의 순수 함수 단위 테스트"""
+"""틱택토 게임의 순수 함수 단위 테스트 — 작성자: 전민성"""
 
 from games.tictactoe import (
     check_winner,
