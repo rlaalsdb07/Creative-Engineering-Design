@@ -21,7 +21,7 @@ python main.py
 | B | | | `games/hangman.py` (행맨) |
 | C | | | `games/baseball.py` (숫자 야구) |
 | D | | | `games/rps.py` (가위바위보) |
-| E | | | `games/tictactoe.py` (틱택토) |
+| E |전민성|min854014-beep| `games/tictactoe.py` (틱택토) |
 
 ## 게임 목록
 
@@ -30,7 +30,7 @@ python main.py
 | 행맨 | | 🚧 |
 | 숫자 야구 | | 🚧 |
 | 가위바위보 | | 🚧 |
-| 틱택토 | | 🚧 |
+| 틱택토 | 3x3 보드에서 3칸을 먼저 잇는 삼목 게임 | ✅ |
 
 ## 협업 규칙
 
