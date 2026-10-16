@@ -27,7 +27,7 @@ def is_solved(word: str, guessed: set[str]) -> bool:
     return all(char in guessed for char in word)
 
 
-def play_hangman():
+def play():
     """행맨 게임 메인 실행 함수"""
     word = random.choice(WORDS)
     guessed = set()
@@ -77,4 +77,4 @@ def play_hangman():
 
 
 if __name__ == "__main__":
-    play_hangman()
+    play()
