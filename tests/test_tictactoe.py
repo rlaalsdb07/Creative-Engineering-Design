@@ -75,6 +75,19 @@ def test_is_full():
     assert is_full(full_board)
 
 
+def test_check_winner_draw():
+    """보드가 꽉 찼으나 승자가 없는 무승부 상태 테스트"""
+    board = [
+        ["X", "O", "X"],
+        ["X", "O", "O"],
+        ["O", "X", "X"],
+    ]
+    # 1. 승자가 없어야 함 (None)
+    assert check_winner(board) is None
+    # 2. 보드가 꽉 찬 상태여야 함 (True)
+    assert is_full(board) is True
+
+
 def test_make_move():
     board = create_board()
     assert make_move(board, 1, "X") is True
