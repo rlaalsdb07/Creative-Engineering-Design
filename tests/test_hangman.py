@@ -11,7 +11,7 @@ def test_mask_word():
     assert hangman.mask_word(word, set()) == "_ _ _ _ _ _"
 
     # 일부 글자를 맞힌 경우
-    assert hangman.mask_word(word, {"p", "t"}) == "p _ _ t _ _ _"
+    assert hangman.mask_word(word, {"p", "t"}) == "p _ t _ _ _"
 
     # 모든 글자를 맞힌 경우
     assert hangman.mask_word(word, {"p", "y", "t", "h", "o", "n"}) == "p y t h o n"
@@ -20,7 +20,7 @@ def test_mask_word():
 def test_is_solved():
     """is_solved 함수가 단어의 모든 글자를 맞혔는지 여부를 정확히 판단하는지 테스트합니다."""
     word = "python"
-    
+
     # 맞히다 만 경우
     assert hangman.is_solved(word, {"p", "y"}) is False
 
