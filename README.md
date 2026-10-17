@@ -36,6 +36,6 @@ python main.py
 
 - `main` 브랜치에는 **직접 push 하지 않습니다.** 반드시 Pull Request!
 - 브랜치 이름: `feature/<게임이름>` (예: `feature/hangman`)
-- 커밋 메시지: `feat:` `fix:` `test:` `docs:` `chore:` 로 시작 (예: `feat: 행맨 글자 마스킹 함수 추가`)
+- 커밋 메시지: `feat:`, `fix:`, `test:`, `docs:`, `chore:` 등으로 시작 (예: `feat: 행맨 글자 마스킹 함수 추가`)
 - PR은 **다른 팀원 1명 이상의 승인** 후 병합합니다.
 - 비밀번호·토큰·`.env`는 절대 커밋하지 않습니다.
