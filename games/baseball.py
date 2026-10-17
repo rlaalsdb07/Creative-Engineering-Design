@@ -1,4 +1,4 @@
-"""숫자 야구 — 담당: 팀원 C
+"""숫자 야구 — 담당: 팀원 C 
 
 [규칙]
 - 컴퓨터가 서로 다른 숫자 3개를 정한다. (예: 3 7 1)
@@ -12,15 +12,15 @@
 
 import random
 
-from utils import ask_int
-
 GAME_NAME = "숫자 야구"
 MAX_ATTEMPTS = 9
 
 
 def make_answer() -> str:
-    """서로 다른 숫자 3개로 이루어진 정답을 생성한다."""
-    digits = random.sample("0123456789", 3)
+    """서로 다른 숫자 3개로 이루어진 정답을 생성한다. (첫 자리는 0이 아님)"""
+    first = random.choice("123456789")
+    remaining = [d for d in "0123456789" if d != first]
+    digits = [first] + random.sample(remaining, 2)
     return "".join(digits)
 
 
@@ -37,10 +37,13 @@ def play() -> None:
     print(f"[{GAME_NAME}] 게임을 시작합니다! (기회: {MAX_ATTEMPTS}번)")
 
     for attempt in range(1, MAX_ATTEMPTS + 1):
-        guess = ask_int(f"{attempt}번째 추측 (3자리 숫자): ", 100, 999)
-        guess_str = str(guess)
+        while True:
+            guess = input(f"{attempt}번째 추측 (3자리 숫자): ").strip()
+            if len(guess) == 3 and guess.isdigit() and guess[0] != "0":
+                break
+            print("3자리 숫자를 입력하세요. (첫 자리는 0이 될 수 없습니다.)")
 
-        strike, ball = judge(answer, guess_str)
+        strike, ball = judge(answer, guess)
 
         if strike == 3:
             print(f"정답입니다! {attempt}번 만에 맞췄습니다. 정답: {answer}")
