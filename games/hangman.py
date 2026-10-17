@@ -1,6 +1,10 @@
 import random
 
-"""행맨 — 담당:김민유 팀원
+
+"""행맨 — 담당:김민유 팀원 
+"""
+
+    행맨 — 담당:김민유 팀원
 [규칙]
 - 단어 목록에서 무작위로 하나를 고른다.
 - 플레이어는 한 글자씩 추측하고, 틀리면 기회가 하나 줄어든다. (기회 6번)
@@ -28,6 +32,7 @@ def is_solved(word: str, guessed: set[str]) -> bool:
 
 
 def play():
+
     """행맨 게임 메인 실행 함수"""
     word = random.choice(WORDS)
     guessed = set()
