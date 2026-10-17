@@ -21,7 +21,7 @@ python main.py
 | B | | | `games/hangman.py` (행맨) |
 | C | | | `games/baseball.py` (숫자 야구) |
 | D | | | `games/rps.py` (가위바위보) |
-| E | | | `games/tictactoe.py` (틱택토) |
+| E |전민성|min854014-beep| `games/tictactoe.py` (틱택토) |
 
 ## 게임 목록
 
@@ -30,12 +30,12 @@ python main.py
 | 행맨 | | 🚧 |
 | 숫자 야구 | | 🚧 |
 | 가위바위보 | 컴퓨터와 3판 2선승제로 대결하는 가위바위보 게임 | ✅ |
-| 틱택토 | | 🚧 |
+| 틱택토 | 3x3 보드에서 3칸을 먼저 잇는 삼목 게임 | ✅ |
 
 ## 협업 규칙
 
 - `main` 브랜치에는 **직접 push 하지 않습니다.** 반드시 Pull Request!
 - 브랜치 이름: `feature/<게임이름>` (예: `feature/hangman`)
-- 커밋 메시지: `feat:` `fix:` `test:` `docs:` `chore:` 로 시작 (예: `feat: 행맨 글자 마스킹 함수 추가`)
+- 커밋 메시지: `feat:`, `fix:`, `test:`, `docs:`, `chore:` 등으로 시작 (예: `feat: 행맨 글자 마스킹 함수 추가`)
 - PR은 **다른 팀원 1명 이상의 승인** 후 병합합니다.
 - 비밀번호·토큰·`.env`는 절대 커밋하지 않습니다.
