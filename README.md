@@ -17,8 +17,8 @@ python main.py
 
 | 역할 | 이름 | GitHub ID | 담당 |
 |---|---|---|---|
-| A | | | 팀장 · `main.py`, `utils.py`, README, 병합 관리 |
-| B | | | `games/hangman.py` (행맨) |
+| A |김민유 |rlaalsdb07| 팀장 · `main.py`, `utils.py`, README, 병합 관리 |
+| B |김민유|rlaalsdb07| `games/hangman.py` (행맨) |
 | C | | | `games/baseball.py` (숫자 야구) |
 | D | | | `games/rps.py` (가위바위보) |
 | E |전민성|min854014-beep| `games/tictactoe.py` (틱택토) |
@@ -27,8 +27,8 @@ python main.py
 
 | 게임 | 설명 | 상태 |
 |---|---|---|
-| 행맨 | | 🚧 |
-| 숫자 야구 | | 🚧 |
+| 행맨 |지정된 단어를 6번의 기회안에 맞춰야 하는 게임 | ✅ |
+| 숫자 야구 |서로 다른 3자리 숫자를 9번의 기회 안에 맞추는 게임 | ✅ |
 | 가위바위보 | 컴퓨터와 3판 2선승제로 대결하는 가위바위보 게임 | ✅ |
 | 틱택토 | 3x3 보드에서 3칸을 먼저 잇는 삼목 게임 | ✅ |
 
