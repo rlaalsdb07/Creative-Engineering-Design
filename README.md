@@ -19,8 +19,8 @@ python main.py
 |---|---|---|---|
 | A |김민유 |rlaalsdb07| 팀장 · `main.py`, `utils.py`, README, 병합 관리 |
 | B |김민유|rlaalsdb07| `games/hangman.py` (행맨) |
-| C | | | `games/baseball.py` (숫자 야구) |
-| D | | | `games/rps.py` (가위바위보) |
+| C |김민재|lJungDol| `games/baseball.py` (숫자 야구) |
+| D |아델 마흐디에|MHDIIH| `games/rps.py` (가위바위보) |
 | E |전민성|min854014-beep| `games/tictactoe.py` (틱택토) |
 
 ## 게임 목록
